@@ -64,6 +64,23 @@ int main(void) {
 		} // End if else check for winner
 	} // End of for loop
 
-	printf("\nWinner is player %c\n", whosturn);
+	printf("\nGame Finished!");
+
+	printf("\n\n");
+	LINE
+	printf("| %c | %c | %c |\n", board[0][0], board[0][1], board[0][2]);
+	LINE
+	printf("| %c | %c | %c |\n", board[1][0], board[1][1], board[1][2]);
+	LINE
+	printf("| %c | %c | %c |\n", board[2][0], board[2][1], board[2][2]);
+	LINE
+
+	if (winner == 0) {
+		printf("\nHow boring, it\'s a draw\n");
+	}
+	else {
+		printf("\nPLAYER %c IS THE WINNER!\n");
+	}
+
 	return 0;
 }
